@@ -1,0 +1,21 @@
+server:
+  port: 8210
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/flowable?&nullCatalogMeansCurrent=true
+    username: root
+    password: password
+  #  nullCatalogMeansCurrent=true
+flowable:
+  database-schema-update: false
+management:
+  endpoint:
+    flowable:
+      enabled: true
+
+logging:
+  level:
+    org:
+      flowable: debug
